@@ -29,7 +29,7 @@ namespace ODataBookStore.Controllers
             }
         }
 
-        [EnableQuery(PageSize = 1)]
+        [EnableQuery]
         public IActionResult Get() { return Ok(_context.Books); }
 
         [EnableQuery]
